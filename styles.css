@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+.hero {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(19, 10, 2, 0.35),
+      rgba(20, 18, 15, 0.35)
+    ),
+    url(./img/vojtech-bruzek-Yrxr3bsPdS0-unsplash.jpg);
+  mask-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+.nav {
+  display: flex;
+  gap: 0.5rem;
+}
+.menu-icon {
+  font-size: 2rem;
+}
+.nav:hover,
+.nav:active {
+  cursor: pointer;
+  color: #5c1a02bb;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  width: 100rem;
+  margin: 15rem auto;
+  color: #fff;
+}
+.hero-content:hover {
+  cursor: pointer;
+}
+.hero-heading {
+  font-size: 4rem;
+}
+.hero-text {
+  display: flex;
+  text-align: center;
+  font-size: 1.8rem;
+  width: 80rem;
+  color: rgba(255, 255, 255, 0.719);
+}
+.hero-btn {
+  padding: 1rem 2.5rem;
+  background: none;
+  font-size: 1.8rem;
+  /* color: #fff; */
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ##################################### */
+/* #a25103 */
+.services {
+  font-size: 1.8rem;
+  color: #444;
+  /* background-color: #f7eae6; */
+  margin: 4rem;
+}
+.heading1 {
+  margin: 1.2rem 0rem;
+  color: #572c03;
+  font-size: 3rem;
+}
+h2 {
+  margin-bottom: 1rem;
+}
+.all-services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.srv {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 2rem 1.5rem;
+  line-height: 2.5rem;
+}
+.srv-icon {
+  font-size: 4rem;
+  text-align: center;
+  /* color: rgb(0, 59, 0); */
+  color: #3a1d01;
+}
+.services-btn {
+  margin-top: 1.5rem;
+}
+.serviceBtn {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: #fff;
+  /* background-color: rgb(2, 34, 2); */
+  background-color: #572c03;
+}
+
+/* bookings */
+.bookings {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(19, 10, 2, 0.842),
+      rgb(20, 18, 15)
+    ),
+    url(./img/vojtech-bruzek-Yrxr3bsPdS0-unsplash.jpg);
+  mask-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  padding: 5rem;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.booking-head {
+  font-size: 2rem;
+}
+form {
+  display: flex;
+  flex-direction: row;
+}
+.booking-input {
+  width: 20rem;
+  padding: 0.8rem;
+  border-radius: 1rem;
+}
+.booking {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.booking-btn {
+  padding: 1rem 2.5rem;
+  background: none;
+  font-size: 1.8rem;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+}
+
+/* ######################### */
+.customers-section {
+  font-size: 1.8rem;
+  margin: 2rem 4rem;
+}
+.customers-cont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.customers {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 2rem 1.5rem;
+  line-height: 2.5rem;
+}
+footer {
+  font-size: 1.8rem;
+}
