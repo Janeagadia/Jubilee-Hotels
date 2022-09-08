@@ -15,7 +15,6 @@
 
           <div class="nav">
             MENU
-
             <ion-icon class="menu-icon" name="menu"></ion-icon>
           </div>
 
@@ -49,69 +48,78 @@
         <h1 class="heading1">Services</h1>
 
         <div class="all-services">
-          <div class="srv">
-            <figure class="srv-icon">
+          <div class="btns-tab-container">
+            <button class="btns-tab btns-tab1 btns-tab-active" data-tab="1">
+              Room services
+            </button>
+            <button class="btns-tab btns-tab2" data-tab="2">
+              Food services
+            </button>
+            <button class="btns-tab btns-tab3" data-tab="3">Relaxation</button>
+            <button class="btns-tab btns-tab4" data-tab="4">Security</button>
+          </div>
+
+          <div class="service-content service-content-1 service-content-active">
+            <figure class="srv-icon srv-icon1">
               <ion-icon name="bed-outline"></ion-icon>
             </figure>
-            <h2>Room Services</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              et maxime expedita. Earum dolor nemo ipsam, eum deserunt error ab
-              dolorum. Facere accusamus accusantium voluptates, fugiat odit
-              fugit quisquam iusto.
-            </p>
-            <div class="services-btn">
-              <button class="serviceBtn">Discover More</button>
+
+            <div>
+              <h2>Room Services</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                et maxime expedita. Earum dolor nemo ipsam, eum deserunt error
+                ab dolorum. Facere accusamus accusantium voluptates, fugiat odit
+                fugit quisquam iusto.
+              </p>
             </div>
           </div>
 
-          <div class="srv">
+          <div class="service-content service-content-2">
             <figure class="srv-icon">
               <ion-icon name="restaurant-outline"></ion-icon>
             </figure>
-            <h2>Food Services</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde,
-              non consectetur totam voluptatibus odio facere molestiae vitae
-              explicabo ducimus sed saepe eligendi, possimus ullam? Praesentium,
-              provident omnis. Magni, obcaecati a?
-            </p>
-            <div class="services-btn">
-              <button class="serviceBtn">Discover More</button>
+            <div>
+              <h2>Food Services</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde,
+                non consectetur totam voluptatibus odio facere molestiae vitae
+                explicabo ducimus sed saepe eligendi, possimus ullam? Praesentium,
+                provident omnis. Magni, obcaecati a?
+              </p>
             </div>
           </div>
 
-          <div class="srv">
+          <div class="service-content service-content-3">
             <figure class="srv-icon">
               <ion-icon name="fast-food-outline"></ion-icon>
             </figure>
-            <h2>Refreshment & Relaxation</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde,
-              non consectetur totam voluptatibus odio facere molestiae vitae
-              explicabo ducimus sed saepe eligendi, possimus ullam? Praesentium,
-              provident omnis. Magni, obcaecati a?
+            <div>
+              <h2>Refreshment & Relaxation</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde,
+                non consectetur totam voluptatibus odio facere molestiae vitae
+                explicabo ducimus sed saepe eligendi, possimus ullam? Praesentium,
+                provident omnis. Magni, obcaecati a?
+              </div>
             </p>
-            <div class="services-btn">
-              <button class="serviceBtn">Learn More</button>
-            </div>
           </div>
 
-          <div class="srv">
+          <div class="service-content service-content-4">
             <figure class="srv-icon">
               <ion-icon name="man-outline"></ion-icon>
             </figure>
-            <h2>Security</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde,
-              non consectetur totam voluptatibus odio facere molestiae vitae
-              explicabo ducimus sed saepe eligendi, possimus ullam? Praesentium,
-              provident omnis. Magni, obcaecati a?
-            </p>
-            <div class="services-btn">
-              <button class="serviceBtn">Learn More</button>
+            <div>
+              <h2>Security</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde,
+                non consectetur totam voluptatibus odio facere molestiae vitae
+                explicabo ducimus sed saepe eligendi, possimus ullam? Praesentium,
+                provident omnis. Magni, obcaecati a?
+              </p>
             </div>
           </div>
+          <!-- ############################ -->
         </div>
       </section>
 
@@ -228,5 +236,7 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
+    <script src="./script.js"></script>
   </body>
 </html>

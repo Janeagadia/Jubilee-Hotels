@@ -7,6 +7,9 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+body {
+  background-color: #f9f6ea;
+}
 .hero {
   background-image: linear-gradient(
       to right bottom,
@@ -72,12 +75,9 @@ html {
 }
 
 /* ##################################### */
-/* #a25103 */
 .services {
-  font-size: 1.8rem;
-  color: #444;
-  /* background-color: #f7eae6; */
-  margin: 4rem;
+  padding: 3rem 6rem;
+  height: 70vh;
 }
 .heading1 {
   margin: 1.2rem 0rem;
@@ -87,32 +87,80 @@ html {
 h2 {
   margin-bottom: 1rem;
 }
-.all-services {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-}
-.srv {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+/* .srv {
   padding: 2rem 1.5rem;
   line-height: 2.5rem;
+} */
+
+.all-services {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: #3a1d01; */
+  margin: 5rem auto;
+  max-width: 110rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  /* height: 20rem; */
+  /* margin: 5rem auto; */
+  background-color: #fff;
 }
-.srv-icon {
-  font-size: 4rem;
-  text-align: center;
-  /* color: rgb(0, 59, 0); */
-  color: #3a1d01;
+
+.btns-tab-container {
+  display: flex;
+  justify-content: center;
 }
-.services-btn {
-  margin-top: 1.5rem;
-}
-.serviceBtn {
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
+
+.btns-tab {
+  margin-right: 2.5rem;
+  transform: translateY(-50%);
+  padding: 2rem 4rem;
   border: none;
+  background-color: #693503;
+  border-radius: 1rem;
   color: #fff;
-  /* background-color: rgb(2, 34, 2); */
-  background-color: #572c03;
+}
+
+.btns-tab1:hover {
+  background-color: blue;
+}
+.btns-tab2:hover {
+  background-color: blueviolet;
+}
+.btns-tab3:hover {
+  background-color: lawngreen;
+}
+.btns-tab4:hover {
+  background-color: pink;
+}
+
+.btns-tab-active {
+  transform: translateY(-70%);
+}
+
+.service-content {
+  display: none;
+  font-size: 1.7rem;
+  padding: 2.5rem 7rem 6.5rem 7rem;
+}
+
+.service-content-active {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem; */
+}
+
+.srv-icon ion-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  color: black;
 }
 
 /* bookings */
