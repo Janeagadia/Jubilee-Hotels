@@ -104,11 +104,13 @@ h2 {
   /* height: 20rem; */
   /* margin: 5rem auto; */
   background-color: #fff;
+  background-color: #693503;
 }
 
 .btns-tab-container {
   display: flex;
   justify-content: center;
+  /* background-color: aqua; */
 }
 
 .btns-tab {
@@ -135,7 +137,7 @@ h2 {
 }
 
 .btns-tab-active {
-  transform: translateY(-70%);
+  transform: translateY(-60%);
 }
 
 .service-content {
