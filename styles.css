@@ -7,11 +7,14 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+body {
+  font-family: "Poppins", sans-serif;
+}
 .hero {
   background-image: linear-gradient(
       to right bottom,
-      rgba(19, 10, 2, 0.35),
-      rgba(20, 18, 15, 0.35)
+      rgba(19, 10, 2, 0.514),
+      rgba(20, 18, 15, 0.575)
     ),
     url(./img/vojtech-bruzek-Yrxr3bsPdS0-unsplash.jpg);
   mask-repeat: no-repeat;
@@ -65,114 +68,92 @@ html {
   padding: 1rem 2.5rem;
   background: none;
   font-size: 1.8rem;
-  /* color: #fff; */
   border: 1px solid #fff;
   color: #fff;
   font-weight: 600;
 }
 
 /* ##################################### */
-/* #a25103 */
-.services {
-  font-size: 1.8rem;
-  color: #444;
-  /* background-color: #f7eae6; */
-  margin: 4rem;
+.description {
+  /* max-width: 120rem; */
+  margin: 4rem auto;
+  font-size: 1.6rem;
+  color: #1c1500;
 }
-.heading1 {
-  margin: 1.2rem 0rem;
-  color: #572c03;
-  font-size: 3rem;
+.facilities {
+  max-width: 95rem;
+  margin: 4rem auto 8rem auto;
+  text-align: center;
 }
-h2 {
-  margin-bottom: 1rem;
+.facilities h2 {
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #8a6802;
 }
-.all-services {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-}
-.srv {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  padding: 2rem 1.5rem;
+.facilities p {
   line-height: 2.5rem;
 }
-.srv-icon {
-  font-size: 4rem;
-  text-align: center;
-  /* color: rgb(0, 59, 0); */
-  color: #3a1d01;
-}
-.services-btn {
-  margin-top: 1.5rem;
-}
-.serviceBtn {
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
-  border: none;
-  color: #fff;
-  /* background-color: rgb(2, 34, 2); */
-  background-color: #572c03;
-}
-
-/* bookings */
-.bookings {
+.packages-container {
   background-image: linear-gradient(
-      to right bottom,
-      rgba(19, 10, 2, 0.842),
-      rgb(20, 18, 15)
+      to bottom,
+      rgba(19, 10, 2, 0.473),
+      rgba(20, 18, 15, 0.493)
     ),
-    url(./img/vojtech-bruzek-Yrxr3bsPdS0-unsplash.jpg);
-  mask-repeat: no-repeat;
-  background-size: cover;
+    url(./img/alexander-kaunas-67-sOi7mVIk-unsplash.jpg);
   background-position: center;
-  height: 40vh;
-  padding: 5rem;
-  color: #fff;
-  font-size: 1.8rem;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-.booking-head {
-  font-size: 2rem;
+.container {
+  max-width: 120rem;
+  margin: 4rem auto;
+  padding: 4rem 0rem;
+  height: 40rem;
 }
-form {
-  display: flex;
-  flex-direction: row;
-}
-.booking-input {
-  width: 20rem;
-  padding: 0.8rem;
-  border-radius: 1rem;
-}
-.booking {
-  display: flex;
-  justify-content: center;
-  margin-top: 5rem;
-}
-.booking-btn {
-  padding: 1rem 2.5rem;
-  background: none;
-  font-size: 1.8rem;
-  color: #fff;
-  border: 1px solid #fff;
-  border-radius: 0.5rem;
-}
-
-/* ######################### */
-.customers-section {
-  font-size: 1.8rem;
-  margin: 2rem 4rem;
-}
-.customers-cont {
+.package-items {
+  /* background-color: blueviolet; */
+  margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.container h1,
+h4 {
+  text-align: center;
+  color: #e8e1cc;
+  line-height: 3rem;
+}
+.items {
+  display: flex;
+  align-items: center;
   gap: 2rem;
+  background-color: rgba(0, 0, 0, 0.548);
+  color: #e8e1cc;
 }
-.customers {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  padding: 2rem 1.5rem;
-  line-height: 2.5rem;
+.icon-container {
+  background-color: #e8e1cc;
+  padding: 2rem;
+  height: 100%;
 }
-footer {
-  font-size: 1.8rem;
+.icon-container ion-icon {
+  color: #8a6802;
+  font-size: 4rem;
+}
+.menu-container {
+  height: 50rem;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(19, 10, 2, 0.582),
+      rgba(20, 18, 15, 0.616)
+    ),
+    url(./img/femoree-kn_ANxnwCQ0-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.food-container {
+  max-height: 45rem;
+}
+.food-container img {
+  height: 30rem;
+  width: 30rem;
 }
