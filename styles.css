@@ -9,6 +9,7 @@ html {
 }
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #e8e1cc;
 }
 .hero {
   background-image: linear-gradient(
@@ -117,7 +118,7 @@ body {
   gap: 3rem;
 }
 .container h1,
-h4 {
+h5 {
   text-align: center;
   color: #e8e1cc;
   line-height: 3rem;
@@ -138,22 +139,159 @@ h4 {
   color: #8a6802;
   font-size: 4rem;
 }
+
+/* Room Section */
+
+.room-section {
+  height: 90rem;
+  overflow: hidden;
+  max-width: 110rem;
+  margin: 5rem auto;
+}
+.room-section h2 {
+  text-align: center;
+  margin-bottom: 6rem;
+  border-bottom: 2px solid #8a6802;
+  font-size: 3rem;
+}
+
+.rooms {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  /* height: 90vh; */
+}
+
+.room {
+  height: 35rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.room--1 {
+  background-image: linear-gradient(
+      to right top,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("./img/room\ image1.jpg");
+}
+.room--2 {
+  background-image: linear-gradient(
+      to right top,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("./img/alexander-kaunas-67-sOi7mVIk-unsplash.jpg");
+}
+.room--3 {
+  background-image: linear-gradient(
+      to right top,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("./img/room\ image3.jpeg");
+}
+.room--4 {
+  background-image: linear-gradient(
+      to right top,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("./img/room\ image1.jpg");
+  /* background-position: top; */
+}
+
+.room-content {
+  transform: translateY(280%);
+  color: red;
+  transition: all 0.8s ease-in-out;
+}
+
+.room:hover .room-content {
+  transform: translateY(0%);
+}
+
+/* ///////////Menu////// */
+
+.menu {
+  margin: 9rem 0rem;
+}
+.menu h2,
+h4 {
+  text-align: center;
+  color: #1c1500;
+  font-size: 3rem;
+}
+.menu h4 {
+  font-size: 1.6rem;
+  /* border-bottom: 2px solid #8a6802; */
+}
 .menu-container {
+  margin-top: 4rem;
   height: 50rem;
   background-image: linear-gradient(
-      to bottom,
-      rgba(19, 10, 2, 0.582),
-      rgba(20, 18, 15, 0.616)
+      to right,
+      rgba(12, 11, 9, 0.541),
+      rgb(5, 5, 5)
     ),
     url(./img/femoree-kn_ANxnwCQ0-unsplash.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+.food-list ul {
+  list-style: none;
+  color: #e8e1cc;
+  font-size: 2rem;
+  line-height: 4rem;
+}
+.food-list img {
+  height: 2rem;
+}
+
 .food-container {
-  max-height: 45rem;
+  height: 40rem;
+  /* background-color: #8a6802; */
+  /* width: 10rem; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 .food-container img {
+  height: 100%;
+  width: 20rem;
+}
+
+/* /////////CUSTOMERS */
+.customers-section {
+  max-width: 110rem;
+  margin: 4rem auto;
+}
+.customer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.customer {
+  background-color: #e9e0c5b2;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   height: 30rem;
-  width: 30rem;
+}
+.customer img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+/* ///////////////footer */
+footer {
+  height: 30rem;
+  background-color: #080807;
+  color: #e8e1cc;
 }
